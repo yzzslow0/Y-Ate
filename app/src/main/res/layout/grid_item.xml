@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="60dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:minWidth="80dp"
+
+    android:id="@+id/grid_item_all"
+
+    android:minHeight="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/grid_item_name"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/grid_item_progressBar"
+        android:layout_above="@+id/grid_item_progressBar2"
+        android:layout_marginBottom="2dp"
+        android:progress="20"
+        android:progressDrawable="@drawable/progress_hp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/grid_item_progressBar2"
+        android:progress="40"
+        android:progressDrawable="@drawable/progress_mp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

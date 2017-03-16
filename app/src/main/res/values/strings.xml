@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Adventure</string>
+    <string name="UI_EDIT_INPUTNAME">请输入你的名字</string>
+</resources>

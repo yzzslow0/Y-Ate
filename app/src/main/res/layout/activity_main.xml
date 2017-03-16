@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yzz.adventure.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_info"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/player_head"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:text="123"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_name"
+            android:gravity="center"
+            android:layout_below="@+id/player_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/player_head">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                  />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/progressBar_HP"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/progress_hp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                 />
+
+                <TextView
+                    android:text="30/100"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:gravity="right"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:text="2"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+               />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/progress_mp"
+                    android:id="@+id/progressBar_MP"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:text="80/100"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:gravity="right"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linear_fight"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_4"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_normal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_5"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_6"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_7"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_8"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/gv_monster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/player_info">
+    </ListView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_monster"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
